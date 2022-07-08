@@ -1,0 +1,27 @@
+task(t1,a1).
+task(t1,a1).
+
+link(l1,r1,p1).
+link(l2,r2,p2).
+link(l3,r3,p3).
+link(l4,r1,r2).
+link(l5,r2,r3).
+link(l6,r3,r1).
+router(r1,1,1,1).
+router(r2,2,1,1).
+router(r3,2,2,1).
+map(m1,p1).
+map(m2,p1).
+map(m3,p2).
+map(m4,p2).
+map(m5,p2).
+map(m6,p3).
+map(m7,p3).
+processor(p1,1,1,1).
+processor(p2,2,1,1).
+processor(p3,2,2,1).
+
+
+
+1 { bind (M,P) : map(M,P) } 1 :- task(T,A).
+
